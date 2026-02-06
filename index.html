@@ -1,10 +1,582 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Sample Web Page</title>
-	</head>
-	<body>
-		<h1> Boilerplate html code for my portfolio exercise.</h1>
-	</body>
+<head>
+  <title>Arvin-Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="/Assets/paw-print1.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Styles/base.css" />
+  <link rel="stylesheet" href="/Styles/navbar.css" />
+  <link rel="stylesheet" href="/Styles/hero.css" />
+  <link rel="stylesheet" href="/Styles/projects.css" />
+  <link rel="stylesheet" href="/Styles/about.css" />
+  <link rel="stylesheet" href="/Styles/skillset.css" />
+  <link rel="stylesheet" href="/Styles/contact.css" />
+  <link rel="stylesheet" href="/Styles/footer.css" />
+</head>
+
+<body>
+  <div class="cat-background">
+    <img src="/Assets/catWhite.png" alt="" class="bg-cat cat-pos-1" />
+    <img src="/Assets/cat2.png" alt="" class="bg-cat cat-pos-2" />
+    <img src="/Assets/cat3.png" alt="" class="bg-cat cat-pos-3" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-4" />
+    <img src="/Assets/paw-print2.png" alt="" class="bg-cat cat-pos-5" />
+    <img src="/Assets/catWhite.png" alt="" class="bg-cat cat-pos-6" />
+    <img src="/Assets/cat2.png" alt="" class="bg-cat cat-pos-7" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-8" />
+    <img src="/Assets/cat3.png" alt="" class="bg-cat cat-pos-9" />
+    <img src="/Assets/paw-print2.png" alt="" class="bg-cat cat-pos-10" />
+    <img src="/Assets/catWhite.png" alt="" class="bg-cat cat-pos-11" />
+    <img src="/Assets/cat2.png" alt="" class="bg-cat cat-pos-12" />
+    <img src="/Assets/cat3.png" alt="" class="bg-cat cat-pos-13" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-14" />
+    <img src="/Assets/catWhite.png" alt="" class="bg-cat cat-pos-15" />
+    <img src="/Assets/cat2.png" alt="" class="bg-cat cat-pos-16" />
+    <img src="/Assets/paw-print2.png" alt="" class="bg-cat cat-pos-17" />
+    <img src="/Assets/cat3.png" alt="" class="bg-cat cat-pos-18" />
+    <img src="/Assets/catWhite.png" alt="" class="bg-cat cat-pos-19" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-20" />
+    <img src="/Assets/paw-print2.png" alt="" class="bg-cat cat-pos-21" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-22" />
+    <img src="/Assets/paw-print1.png" alt="" class="bg-cat cat-pos-23" />
+  </div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img src="/Assets/paw-print1.png" alt="" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="hero-grid">
+      <div class="hero-image">
+        <pre class="ascii-art">
+%%%##***********+*****%#%%%%%%%%#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##%%%%%%#%%%%%%####*+************
+%%####***+++++***++****%#%%%%%%%#%%%#%%%%%%%%%%%%%%%%##%%%%%%%%%%%%#%%%%%%%%%%%%#%##*++*++**********
+%%#####*****++++*++****+%#%%%%%%#%%%%%%%%%%%%%%%%%%#####%%%%%%%%%%%#%%%%%%%%%%%%###+******+*+*******
+%%###********++++*+*+****##%%%%%#%%%%%%%%%%%%%%%%%#%%%%#%###%##%%##%%%#%%%%%%#%%#***#**++++++*******
+%#####***+**+*++*+++*******#%%%%#%%%%%%%%%%%%%%%%%%%%#%%%%%#%#####*###%%%%%#%######*****++++********
+#%##*##**+++++++++++***#*****#%%#%#####%%%%%%%%%%%%%%%%#%%%%%#%%######%#%########*******++**+*******
+###**####****+**+*+++++++++++=+++**=+++***#%#*###%#%%%#####%##%###############%#***+++++++++++******
+%%##***#****+*++++++++++++============--+=====+==+=%##+++*##%##%%##%%%%#%####%#**++++++++++++*****++
+%###****#**++++++++++++================------=--==-=====+*###%%##@@%@@#%%%%%###****++++++++++++*++++
+%#%##*++##**++++++++===++++==+==+=====-----------------==#%@*#%**%@%%#%%@@%@%#****++++++++****++++++
+@###**++++++++++++++=+++++++++=+=-=---------------------==##+###%@@@#@%%#%%%%##*********++++++*+++++
+@@%#***+++++++++++++++++*+=======-------------------------=**+**###%@%%@@%%%%####*****++++****++++++
+@@%#*++++**+++++++++++*+++=======--------------------------===+*%**@#%%%@@%%########****+**+**++++++
+%%#****+++*++++*++++*+++=========--------------------------===++=***#%*%%%%%%%#####*******+*++++++=#
+%%#**+***++++++++++*+#+========-==--------------------------=======+*####%@%%%%%%#***#****++++++++*#
+#%%#=++++++++++***++++++++=======---------------------------========+**#%*%%%%%@%#%*#**++++***++++##
+%#**=+++++++++****+**##***##+=====---------------------------=======+*###%%#%%%%@%#******+***+++*+##
+%#*=======++******#%@%%###%%**+========---------------=------=======++++*###%%%%%%%%#****++++++**+##
+*+==========+++##%##%@@@@@@@#%#*========------------======-=====++##%##****###%%%@%##*##***+++++++##
+==============+#%*#@@@@@@@@@@%#%+=======-----------=========++#@@@@@@@@@%%####%%%%%#%#****++=++++*##
+===========--=+@*#@@@@@@@@@@@%#%*========----------========+#@%%%@@@%%%@@%%%%%@#%%%####***+=+++++###
+==========----+#+#@@@=@@@@@@%*#%*========---------========*@%#%@@@@@@@@##@@##%%@@@%%%###*+++++=*####
+===========----+#*%@@@@@@@@##+#%+========================+%##%@@@@@-@@@@#*%@%%%@@%%@@%%%%#*++*######
+===========-----=+#%#%@%%##**###*========================*%**%%#@@@@@%%@@+%@#*#%%@@@@@@%%%%#**#####*
+============-------=-==++++=+**=========================+*##*#%@@@@@@@@@%+#@***###%@@@@@%%%%%##+++++
+===============----------==================+++=========+++%##**#%@@@@@@##*@#++**###%%%@@@@%%%%*+++++
+======+========---------===============++++++==+==========+*+++**#%#%%##@*===+*####%#%@@@@%%%%%*+++=
+===++++++++========================+++++++++++++++++=========+======-------=+**#**#%###%@@@%%%%%*+==
+++++++++++++=====================++++++++++++++++++++==========--------------==+*#%###**%%@@@%%%#*==
+++++++++++===================+******++++++++++++++++++==========---------------==++++++*%@@@@%%%#*+=
+++++++++++=+++================+**###%%++++++++++++*****+=============---=-----=========+*%%%@@%%##+=
++++++++++++++++++++=============++***%******++%@%@%%%#*+================================+*%@@@%###+=
++++++++++++++++++++++++===========++***********##**+========================++===========++##%%##*+=
+++++++++++++++*++++++++++++=+==+++++*****#******++==========================++*+==========++*#%##*==
+++++++*+*****+++*+**++++++++++++********#*******++==+==========+===========+=+**+++========+++##*+=-
+++++***************************+********##*******++++=++++++++++++++++++++++++***+++======+++++++==-
+++++****+*******######**#**************###*******++++++++++++++++*+++++++++++++*+++===============--
+***************########%##############*####**************++++*****+++****+++++++*++++=============--
+*****************##############################%#*###******************+***++*+++++++=============--
+****+*****************##**#***###****#############################*******+*+++++++++============----
+****++++******************************#***#*#######**###############*********+++++===========-------
+**+++++++***************************************************#*##*##********++++++*++=========-------
+**++++++++++***********************************************#***#***********++++++++++========-=-----
+*+++++++++++++**************************************************************+++*+++++==========-----
++*++++++++++++++***********************************************************+++*+*++++========-------
+***+++++++++++++++++*********************************#**********************+*++++++++=======-------
+*******+++++++++++++*******************************#********************+**++++++++=========--------
++*********+++++++++++++++*********************************************+++++++++++++=========--------
+++*********++++++++++++++++**********************######**************+++++++++++++=========---------
+++++************++++++++++++**********************##*##*************+++++++++++===========----------
++++++*************+++++++++**************************************+++++++++++=============-----------
+++++++******************************************************+++++++++++++++==============-----------
++++++++*************************************************+****+++++++++++++==============------------
++++++++++**********************************************+++++***++++++++++===============------------
+				</pre>
+      </div>
+      <div class="hero-info">
+        <div class="hero-greeting">
+          <span class="greeting-badge">Hello, I'm</span>
+          <h1 class="hero-name">Arvin</h1>
+          <p class="hero-role">Struggling CS Student</p>
+        </div>
+        <div class="hero-description-box">
+          <p class="hero-description">
+            I like tech, coding, and making cool boring stuff. Nice to meet
+            you!
+          </p>
+        </div>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <a href="https://github.com/arvin-ferrer/YSEIS" target="_blank" rel="noopener noreferrer"
+          class="project-card-link">
+          <article class="project-card project-featured">
+            <div class="project-image">
+              <img src="/Assets/yseis.png" alt="YSEIS Screenshot" />
+              <div class="project-overlay">
+                <!-- <span class="project-number"></span> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">YSEIS</h3>
+              <p class="project-description">
+                Full-stack inventory and borrowing management system for a student organization.
+                As Backend Lead, I built RESTful services using Node.js and Express, built cron jobs,
+                implemented JWT authentication, and designed the notification system.
+                I also integrated MongoDB for database operations and access control, and
+                collaborated with the team to ensure seamless integration.
+              </p>
+              <div class="project-tags">
+                <span>MERN</span>
+                <span>Docker</span>
+                <span>Shadcn</span>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="https://github.com/arvin-ferrer/pollution-reduction-solver" target="_blank" rel="noopener noreferrer"
+          class="project-card-link">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Assets/pollution-reduction.jpg" alt="Pollution Reduction Solver Screenshot" />
+              <div class="project-overlay">
+                <!-- <span class="project-number"></span> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Pollution Reduction Solver</h3>
+              <p class="project-description">
+                Interactive optimization-based application to model pollution reduction strategies.
+                Implemented custom mathematical optimization using linear programming to minimize
+                pollution under defined constraints. Built a web-based interface using Streamlit
+                for user input and result visualization.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Pandas</span>
+                <span>Numpy</span>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="https://github.com/arvin-ferrer/SocialBehaviorEDA" target="_blank" rel="noopener noreferrer"
+          class="project-card-link">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Assets/eda.png" alt="EDA of Social Behavior Screenshot" />
+              <div class="project-overlay">
+                <!-- <span class="project-number"></span> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">EDA of Social Behavior</h3>
+              <p class="project-description">
+                Exploratory data analysis on a Kaggle dataset to study introvert vs. extrovert
+                social behavior patterns. Applied statistical summaries and distribution comparisons
+                to uncover key trends. Created visualizations highlighting differences in
+                communication styles and social activity.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Numpy</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Jupyter Notebook</span>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="https://github.com/arvin-ferrer/Ball1n" target="_blank" rel="noopener noreferrer"
+          class="project-card-link">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Assets/ball1n.png" alt="Ball1n Screenshot" />
+              <div class="project-overlay">
+                <!-- <span class="project-number"></span> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Ball1n</h3>
+              <p class="project-description">
+                Best Game in the Philippines at GameJam+ Philippines!
+                A 2D game developed using the Godot Engine as part of a collaborative team.
+                Implemented core gameplay mechanics and game logic using GDScript.
+                Built under strict time constraints during a national-level game jam.
+              </p>
+              <div class="project-tags">
+                <span>Godot</span>
+                <span>GDScript</span>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="https://github.com/arvin-ferrer/ZomZom" target="_blank" rel="noopener noreferrer"
+          class="project-card-link">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="/Assets/zomzom.gif" alt="ZomZom Gameplay" />
+              <div class="project-overlay">
+                <!-- <span class="project-number"></span> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">ZomZom</h3>
+              <p class="project-description">
+                A Plants vs. Zombies-inspired strategy game developed using Java and JavaFX.
+                Implemented enemy waves, player defenses, and game state management.
+                Collaborated with three other developers on gameplay logic and feature integration.
+                Pixel art assets created using LibreSprite.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>LibreSprite</span>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-frame">
+            <pre class="ascii-art">
+                .@@@@.    .@@@@.                
+              .@@@@@@@.   @@@@@@@               
+             .@@@@@@@@.  .@@@@@@@@.             
+             @@@@@@@@@@  @@@@@@@@@@.            
+            @@@@@@@@@@@  @@@@@@@@@@@            
+            .@@@@@@@@@*  *@@@@@@@@@.            
+      .@@@@. @@@@@@@@@.   @@@@@@@@@ .@@@@       
+      @@@@@@@ @@@@@@@     .@@@@@@%.@@@@@@@.     
+     @@@@@@@@@  ...    -:    ..   @@@@@@@@@     
+     @@@@@@@@@-    @@@@@@@@@@.   -@@@@@@@@@     
+     #@@@@@@@@@   @@@@@@@@@@@@.  @@@@@@@@@#     
+      @@@@@@@@= +@@@@@@@@@@@@@@. =@@@@@@@@      
+       .@@@@@..@@@@@@@@@@@@@@@@@@..@@@@@.       
+            .@@@@@@@@@@@@@@@@@@@@@@.            
+           -@@@@@@@@@@@@@@@@@@@@@@@@-           
+           @@@@@@@@@@@@@@@@@@@@@@@@@@.          
+           @@@@@@@@@@@@@@@@@@@@@@@@@@.          
+            @@@@@@@@@@@@@@@@@@@@@@@@            
+             *@@@@@@@@@@@@@@@@@@@@*             
+            </pre>
+          </div>
+          <div class="about-decoration"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-label">ABOUT ME</span>
+          <h2 class="section-title">
+            Likes Data Science, and Software Engineering
+          </h2>
+          <p class="about-text">
+            I'm a sophomore Computer Science student in University of the
+            Philippines Los Baños. I like competitive programming, data
+            science, and software engineering. I'm also a member of the Young
+            Software Engineer's Society.
+          </p>
+          <p class="about-text">
+            When I'm not in class, coding, or doing org stuff, you'll find me
+            doomscrolling, or contemplating about the current state of the job
+            market in CS.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-number">01</span>
+              <h4>Frontend Development</h4>
+              <p>HTML, CSS, ReactJS, Svelte, Tailwind CSS, Shadcn</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-number">02</span>
+              <h4>Backend Development</h4>
+              <p>MongoDB, ExpressJS, NodeJS, Sveltekit</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-number">04</span>
+              <h4>Data Science</h4>
+              <p>
+                Python, R, RStudio, Pandas, Numpy, Streamlit Matplotlib,
+                Seaborn, Jupyter Notebook
+              </p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-number">03</span>
+              <h4>DevOps</h4>
+              <p>Docker, Git, Github, Github Actions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skillset" class="skillset">
+    <div class="section-container">
+      <div class="skillset-header">
+        <span class="section-label">WHAT I WORK WITH</span>
+        <h2 class="section-title">Skillset</h2>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+            <span>C</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+            <span>C++</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
+            <span>R</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <span>React</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot" />
+            <span>Godot</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+            <span>Express</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="SvelteKit" />
+            <span>SvelteKit</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+              alt="TailwindCSS" />
+            <span>TailwindCSS</span>
+          </div>
+
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+            <span>C</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+            <span>C++</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" />
+            <span>R</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <span>React</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot" />
+            <span>Godot</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <span>MongoDB</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+            <span>Express</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="SvelteKit" />
+            <span>SvelteKit</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+              alt="TailwindCSS" />
+            <span>TailwindCSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">GET IN TOUCH</span>
+          <h2 class="section-title">Let's create some project :)</h2>
+          <p class="contact-text">
+            Have a project in mind or just want to say hello? I'd love to hear
+            from you. Let's create something together.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:hello@ferrer.dev">acferrer8@up.edu.ph</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span>Valenzuela City, Philippines</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/arvin-ferrer" class="social-link" aria-label="GitHub">
+              <img src="/Assets/github.png" alt="GitHub" class="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/arvinferrer7804/" class="social-link" aria-label="LinkedIn">
+              <img src="/Assets/linkedin.png" alt="LinkedIn" class="social-icon" />
+            </a>
+            <a href="https://www.facebook.com/0x617276696E" class="social-link" aria-label="Facebook">
+              <img src="/Assets/facebook.png" alt="Facebook" class="social-icon" />
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:hello@ferrer.dev" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo"><a href="#home"> <img src="/Assets/paw-print1.png" alt="" /> </a></span>
+          <p>&copy; 2026 Ferrer. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

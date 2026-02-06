@@ -1,0 +1,37 @@
+.footer {
+    padding: 3rem 0;
+    background: #0a0a0a;
+    border-top: 1px solid #2a2a2a;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-brand p {
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    font-size: 0.875rem;
+    color: #999999;
+    transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
