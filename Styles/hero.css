@@ -1,0 +1,111 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
+}
+
+.hero-bg-gradient {
+    display: none;
+}
+
+.hero-grid {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.ascii-art {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5rem;
+    line-height: 1.1;
+    color: #e5e5e5;
+    background: #0a0a0a;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0;
+    overflow: hidden;
+    white-space: pre;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-greeting {
+    margin-bottom: 0.5rem;
+}
+
+.greeting-badge {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666666;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.hero-name {
+    font-size: 4rem;
+    font-weight: 800;
+    /* color: #ffffff; */
+    background: linear-gradient(to right, #eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin: 0;
+}
+
+.hero-name::first-letter {
+    color: #3a3a3a;
+}
+
+/* .hero-name:hover { */
+/* color: #ffffff; */
+/* transform: translateY(-5px); */
+/* background: linear-gradient(to right, #eee, #333); */
+/* -webkit-background-clip: text; */
+/* background-clip: text; */
+/* -webkit-text-fill-color: transparent; */
+/* } */
+
+.hero-role {
+    font-size: 1.25rem;
+    color: #666666;
+    margin: 0.5rem 0 0 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.hero-description-box {
+    background: #0a0a0a;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: #999999;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.hero-info .btn {
+    align-self: flex-start;
+}
